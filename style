@@ -30,7 +30,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #FFA500; /* Laranja */
+    background-color: #FFA500;
     border-radius: 5px;
 }
 
@@ -58,7 +58,7 @@ header nav ul li a:hover {
 .cta-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: #FFA500; /* Laranja */
+    background-color: #FFA500;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -102,21 +102,21 @@ section p {
     color: #666;
 }
 
-#benefits, #plans, #testimonials {
+#benefits, #testimonials, #faq {
     background-color: #f4f4f4;
 }
 
-#benefits ul, #plans ul, #testimonials ul {
+#benefits ul, #testimonials ul, #faq details {
     list-style: none;
     padding: 0;
 }
 
-#benefits ul li, #plans ul li, #testimonials ul li {
+#benefits ul li, #testimonials ul li, #faq details {
     margin-bottom: 1.5rem;
     text-align: left;
 }
 
-#benefits ul li::before, #plans ul li::before, #testimonials ul li::before {
+#benefits ul li::before {
     content: '•';
     color: #FFA500;
     font-weight: bold;
