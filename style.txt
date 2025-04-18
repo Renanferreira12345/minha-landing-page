@@ -1,0 +1,171 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #FFA500; /* Laranja */
+    border-radius: 5px;
+}
+
+#hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #FFA500; /* Laranja */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e59800;
+}
+
+.ads-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.ads-icons img:hover {
+    opacity: 1;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666;
+}
+
+#benefits, #plans, #testimonials {
+    background-color: #f4f4f4;
+}
+
+#benefits ul, #plans ul, #testimonials ul {
+    list-style: none;
+    padding: 0;
+}
+
+#benefits ul li, #plans ul li, #testimonials ul li {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+#benefits ul li::before, #plans ul li::before, #testimonials ul li::before {
+    content: '•';
+    color: #FFA500;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#testimonials ul li {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#testimonials ul li img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .ads-icons img {
+        width: 40px;
+        height: 40px;
+    }
+}
