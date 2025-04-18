@@ -1,5 +1,5 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -38,21 +38,28 @@ header nav ul li a:hover {
     text-align: center;
     padding: 4rem 2rem;
     background-color: #f9f9f9;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    color: #fff;
 }
 
 #hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #333;
 }
 
 #hero p {
     font-size: 1.2rem;
-    color: #666;
     margin-bottom: 2rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .cta-button {
@@ -65,22 +72,25 @@ header nav ul li a:hover {
     margin-bottom: 2rem;
     font-size: 1.2rem;
     transition: background-color 0.3s;
+    border: 2px solid #FFA500;
 }
 
 .cta-button:hover {
     background-color: #e59800;
+    color: #fff;
 }
 
-.ads-icons img {
+.hero-images img {
     width: 50px;
     height: 50px;
-    margin: 0 10px;
+    margin: 1rem 10px;
     opacity: 0.7;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
 }
 
-.ads-icons img:hover {
+.hero-images img:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 
 section {
@@ -130,6 +140,7 @@ section p {
     padding: 1rem;
     border-radius: 5px;
     background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #testimonials ul li img {
@@ -164,7 +175,7 @@ footer p {
         font-size: 2rem;
     }
 
-    .ads-icons img {
+    .hero-images img {
         width: 40px;
         height: 40px;
     }
